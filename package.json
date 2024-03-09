@@ -1,0 +1,16 @@
+{
+  "name": "@401-sneaky/lm-vision",
+  "version": "0.0.1",
+  "description": "Visual programmatic tools using GPT4's Vision API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "401-Nick",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "openai": "^4.28.4"
+  }
+}
