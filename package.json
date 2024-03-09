@@ -1,6 +1,6 @@
 {
   "name": "@_401_nick/lm-vision",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Visual programmatic tools using GPT4's Vision API",
   "main": "index.js",
   "scripts": {

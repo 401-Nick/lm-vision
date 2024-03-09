@@ -34,8 +34,7 @@ class VisionFramework {
             throw new Error("No OPENAI_API_KEY provided");
         }
 
-        this.apiKey = process.env.OPENAI_API_KEY;
-        this.openai = new OpenAI(apiKey);
+        this.openai = new OpenAI(process.env.OPENAI_API_KEY);
     }
 
     /**
