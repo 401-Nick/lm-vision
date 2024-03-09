@@ -25,7 +25,7 @@ To use VisionFramework in your project, follow these steps:
 1. Clone this repository or download the source code.
 2. Navigate to the project directory and install the dependencies:
     ```bash
-    npm install
+    npm install @_401_nick/lm-vision
     ```
 3. Create a `.env` file in the project root and add your OpenAI API key:
     ```plaintext
@@ -38,7 +38,7 @@ Here's how to use VisionFramework in your project:
 
 1. Import the `VisionFramework` class from the module.
     ```javascript
-    const VisionFramework = require('./path/to/VisionFramework');
+    const VisionFramework = require('./VisionFramework');
     ```
 2. Create an instance of the `VisionFramework`.
     ```javascript
@@ -56,15 +56,3 @@ Here's how to use VisionFramework in your project:
         .then(tags => console.log(tags))
         .catch(error => console.error(error));
     ```
-
-## Contributing
-
-Contributions to VisionFramework are welcome! Feel free to fork the repository, make changes, and submit pull requests.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-## Contact
-
-If you have any questions or feedback, please feel free to contact the project maintainer.
