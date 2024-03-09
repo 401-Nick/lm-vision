@@ -3,9 +3,6 @@ dotenv.config();
 const { OpenAI } = require("openai");
 const openai = new OpenAI();
 
-if (!process.env.OPENAI_API_KEY) {
-    throw new Error("No OPENAI_API_KEY provided");
-}
 
 async function respond(imgURL, query) {
     try {
@@ -32,6 +29,14 @@ async function respond(imgURL, query) {
  * VisionFramework provides methods for analyzing images and generating descriptions, tags, captions, alt text, and stories.
  */
 class VisionFramework {
+    constructor() {
+        if (!process.env.OPENAI_API_KEY) {
+            throw new Error("No OPENAI_API_KEY provided");
+        }
+
+        this.openai = new OpenAI(process.env.OPENAI_API_KEY);
+    }
+
     /**
      * Analyzes an image and generates a description.
      * @param {string} imgURL - The URL of the image to analyze.
